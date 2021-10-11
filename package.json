@@ -1,0 +1,31 @@
+{
+  "name": "coco-cola",
+  "version": "1.0.0",
+  "description": "utility function of object, array, function, date ...",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0930-online/coco-cola.git"
+  },
+  "keywords": [
+    "utils",
+    "utility",
+    "common",
+    "date",
+    "function",
+    "object",
+    "array"
+  ],
+  "author": "lvzhen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0930-online/coco-cola/issues"
+  },
+  "homepage": "https://github.com/0930-online/coco-cola#readme"
+}
