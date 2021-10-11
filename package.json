@@ -1,6 +1,6 @@
 {
   "name": "coco-cola",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "utility function of object, array, function, date ...",
   "main": "index.js",
   "directories": {
