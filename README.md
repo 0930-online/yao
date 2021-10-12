@@ -4,8 +4,10 @@ utility function of object,array,function,date ...
 
 ## Install
 
+Princess Yao is a support hero of the most popular moba - 'Honor Of Kings'. As every player knows, yao is just a tool man.
+
 ```
-npm install coco-cola
+npm install princess-yao
 ```
 
 ## Usage
@@ -24,7 +26,7 @@ Date formatter, transform the date object to the fmt string.
 **Example**
 
 ```typescript
-import { date } from "coco-cola";
+import { date } from "princess-yao";
 
 const formatted = date.format(new Date(), "YYYY-MM-dd");
 //formatted: 2021-10-10
@@ -46,7 +48,7 @@ Gets specific part from the given date
 **Example**
 
 ```typescript
-import { date } from "coco-cola";
+import { date } from "princess-yao";
 
 // ‘Mon Sep 06 2021 16:31:02 GMT+0800 (中国标准时间)’
 const now = new Date();
@@ -78,7 +80,7 @@ Sets part of the value in the Date object using local time.
 **Example**
 
 ```typescript
-import { date } from "coco-cola";
+import { date } from "princess-yao";
 
 // ‘2021-09-06 16:31:02’
 const now = new Date();
@@ -104,7 +106,7 @@ Sets the year, month, date of the Date object using local time.
 **Example**
 
 ```typescript
-import { date } from "coco-cola";
+import { date } from "princess-yao";
 
 // ‘2021-09-06 16:31:02’
 const now = new Date();
@@ -131,7 +133,7 @@ Sets the hour, minute, second, millisecond value in the Date object using local 
 **Example**
 
 ```typescript
-import { date } from "coco-cola";
+import { date } from "princess-yao";
 
 // ‘2021-09-06 16:31:02 010’
 const now = new Date();
@@ -156,7 +158,7 @@ Date add function with specific time unit.
 **Example**
 
 ```typescript
-import { date } from "coco-cola";
+import { date } from "princess-yao";
 
 // ‘2021-09-06 16:31:02 010’
 const now = new Date();
@@ -181,7 +183,7 @@ Date substract function with specific time unit.
 **Example**
 
 ```typescript
-import { date } from "coco-cola";
+import { date } from "princess-yao";
 
 // ‘2021-09-06 16:31:02 010’
 const now = new Date();
@@ -204,7 +206,7 @@ Get relative time from now, it's like xx time ago.
 **Example**
 
 ```typescript
-import { date } from "coco-cola";
+import { date } from "princess-yao";
 
 const now = new Date(); // Now Time : ‘Mon Sep 06 2021 16:31:02 GMT+0800 (中国标准时间)’
 date.substract(45, "minutes"); // minus 45 minutes
@@ -228,7 +230,7 @@ Determine if a value is an array.
 **Example**
 
 ```typescript
-import { array } from "coco-cola";
+import { array } from "princess-yao";
 
 array.isArray([]); // true
 ```
@@ -248,7 +250,7 @@ Determine if a value is an emtpy array.
 **Example**
 
 ```typescript
-import { array } from "coco-cola";
+import { array } from "princess-yao";
 
 array.isEmpty([]); // true
 ```
@@ -268,7 +270,7 @@ Shuffle the given array with math.random as the compare function.
 **Example**
 
 ```typescript
-import { array } from "coco-cola";
+import { array } from "princess-yao";
 
 const arr = [1, 2, 3, 4, 5];
 array.shuffle(arr); // might output: [1,3,2,5,4] ...
@@ -290,7 +292,7 @@ Flatten tree data in recursion.
 **Example**
 
 ```typescript
-import { array } from "coco-cola";
+import { array } from "princess-yao";
 
 const arr = [
   {
@@ -345,7 +347,7 @@ Group collection by function iteratee.
 **Example**
 
 ```typescript
-import { array } from "coco-cola";
+import { array } from "princess-yao";
 
 const arr = [
   {
@@ -429,7 +431,7 @@ The order and references of result values are determined by the first array.
 **Example**
 
 ```typescript
-import { array } from "coco-cola";
+import { array } from "princess-yao";
 ```
 
 #### [.except](lib/array/index.js#L88)
@@ -449,7 +451,7 @@ Creates an array excluding all given values using SameValueZero for equality com
 **Example**
 
 ```typescript
-import { array } from "coco-cola";
+import { array } from "princess-yao";
 ```
 
 ### object
@@ -470,7 +472,7 @@ Replace obj columns to other columns , according to the given entries.
 **Example**
 
 ```typescript
-import { object } from "coco-cola";
+import { object } from "princess-yao";
 object.replace({ a: 1, b: 2 }, [
   [a, c],
   [b, d],
@@ -493,7 +495,7 @@ Returns an object created by key-value entries for properties and methods.
 **Example**
 
 ```typescript
-import { object } from "coco-cola";
+import { object } from "princess-yao";
 object.fromEntries([
   [a, 1],
   [b, 2],
@@ -516,7 +518,7 @@ Determine if value is an empty object.
 **Example**
 
 ```typescript
-import { object } from "coco-cola";
+import { object } from "princess-yao";
 object.isEmpty({}); // true
 ```
 
@@ -536,7 +538,7 @@ Creates a deep clone of value.
 **Example**
 
 ```typescript
-import { object } from "coco-cola";
+import { object } from "princess-yao";
 object.cloneDeep({ a: 1, b: 2 }); // { a: 1, b: 2 }
 ```
 
@@ -555,7 +557,7 @@ Returns an object from URLSearchParams entries.
 **Example**
 
 ```typescript
-import { utility } from "coco-cola";
+import { utility } from "princess-yao";
 // http://www.xxx.com?a=1&b=2
 utility.URLSearchObject(); // { a: 1, b: 2 }
 ```
@@ -573,7 +575,7 @@ Generates a unique ID.
 **Example**
 
 ```typescript
-import { utility } from "coco-cola";
+import { utility } from "princess-yao";
 utility.uuid(); // cd205467-0120-47b0-9444-894736d873c7
 ```
 
@@ -592,7 +594,7 @@ Determine whether the value is null, undefined, "", NaN, [] or {}.
 **Example**
 
 ```typescript
-import { utility } from "coco-cola";
+import { utility } from "princess-yao";
 
 utility.isEmptyValue({}); // true
 utility.isEmptyValue([]); // true
@@ -614,7 +616,7 @@ Omit all entries with the predictable iteratee function.
 **Example**
 
 ```typescript
-import { utility } from "coco-cola";
+import { utility } from "princess-yao";
 
 utility.omit({ a: 1, b: 2, c: {}, d: "" }, (key, value) =>
   utility.isEmptyValue(value)
@@ -638,7 +640,7 @@ Delays invoking func until after 'delay' milliseconds have elapsed since the las
 **Example**
 
 ```typescript
-import { utility } from "coco-cola";
+import { utility } from "princess-yao";
 ```
 
 #### [.throttle](lib/utility/index.js#L99)
@@ -657,5 +659,5 @@ Only invokes func at most once per every 'duration' milliseconds.
 **Example**
 
 ```typescript
-import { utility } from "coco-cola";
+import { utility } from "princess-yao";
 ```
